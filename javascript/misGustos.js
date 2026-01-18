@@ -23,4 +23,5 @@ tarjetas.forEach(tarjeta => {
         // Restaura el fondo original del body
         document.body.style.backgroundImage = fondoOriginal;
     });
+
 });

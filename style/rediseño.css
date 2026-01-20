@@ -353,6 +353,43 @@ nav {
     margin-bottom: 1rem;
 }
 
+.justificacion-redisenio {
+    padding: 80px 5%;
+    background: #FFFFFF;
+}
+
+.justificacion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 3rem auto 0;
+}
+
+.justificacion-card {
+    background: #F5F5F5;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.justificacion-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.justificacion-card h3 {
+    color: #004E89;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.justificacion-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
 footer {
     background: #1A1A2E;
     color: white;
@@ -434,6 +471,9 @@ footer {
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .justificacion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -443,6 +483,7 @@ footer {
     .principal-content,
     .programas-grid,
     .extra-grid,
+    .justificacion-grid,
     .blog-grid,
     .footer-contenido {
         grid-template-columns: 1fr;
